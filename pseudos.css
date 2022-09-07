@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    width: 200px;
+    height: 50;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button::before{
+    content: "Pasa por encima";
+}
+
+.boton:hover{
+    color: white;
+    background-color: green;
+}
+
+button:hover::before{
+    content: "¡Hecho!";
+}
